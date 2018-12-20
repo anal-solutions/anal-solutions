@@ -19,6 +19,7 @@ body {
 
 
 /* ---- typography ---- */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
   color: #111;
@@ -92,18 +93,6 @@ p {
 
 /* ---- section ---- */
 
-
-section.testimonials .button {
-  margin-bottom: 10px;
-}
-
-
-.anal-disco-container {
-  width: 100%;
-  /* display: flex;
-  justify-content: space-around; */
-}
-
 .anal-disco{
   width: 3000px;
   height: 15px;
@@ -125,8 +114,36 @@ section.testimonials .button {
 }
 
 .anal-title {
-
+  background-color: rgba(255,255,255, 0.7);
+  height: 40vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rainbow 1s infinite; 
+  font-size: 50px;
 }
+
+.anal-title:hover, .anal-thanks:hover {
+  cursor: url('images/mouse-click.png'), auto;
+  display: block;
+  
+}
+
+.anal-thanks {
+  height: 50vh;
+  width: 50vw;
+  animation: rainbow-box 1s infinite; 
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 2em;
+}
+ 
 
 .section {
   display:flex;
@@ -192,4 +209,32 @@ section.testimonials .button {
 
  }
 
+}
+
+@keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+@keyframes rainbow-box{
+  0%{background-color: orange;}	
+  10%{background-color: purple;}	
+	20%{background-color: red;}
+  30%{background-color: CadetBlue;}
+	40%{background-color: yellow;}
+  50%{background-color: coral;}
+	60%{background-color: green;}
+  70%{background-color: cyan;}
+  80%{background-color: DeepPink;}
+  90%{background-color: DodgerBlue;}
+	100%{background-color: orange;}
 }
